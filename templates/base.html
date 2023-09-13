@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunnat DEV</title>
+</head>
+<body>
+    <a href="{% url 'home' %}">Bosh sahifa</a> |
+    <a href="{% url 'foot' %}">Ovqatlar</a>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+
+</body>
+</html>

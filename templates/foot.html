@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for post in object_list %}
+        <h3 style="color: blue; text-align: center; background-color: white;">Ovqat menu:</h3>
+        <h3 >{{post.name}}</h3>
+        <p style="color: red; font-size: 25px;text-align: center; background-color: white;">Narx:</p>
+        <p style="font-size: 20px">{{ post.price }}</p>
+    {% endfor %}
+{% endblock content %}

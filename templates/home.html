@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunnat dev</title>
+</head>
+<body>
+{% extends 'base.html' %}
+
+{% block content %}
+{% for post in object_list %}
+    <h3 style="color: blue; text-align: center;">Sarlavha:</h3>
+    <h3 style="font-size: 20px">{{post.title}}</h3>
+    <p style="color: red; font-size: 25px;text-align: center;">Asosiy soz:</p>
+    <p style="font-size: 20px">{{ post.body }}</p>
+    <p style="color: black; font-size: 25px;text-align: center;">Muallif:</p>
+    <p style="font-size: 20px">{{ post.muallif }}</p>
+{% endfor %}
+
+{% endblock content %}
+
+</body>
+</html>
